@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Neelesh Singh Portfolio, Neelesh Singh, portfolio, Frontend Developer, MERN Developer portfolio websites,personal portfolio websites, portfolio design, personal portfolio" />
+    <meta name="description"
+        content="Welcome to Neelesh Singh's Portfolio. Passionate Web Developer. Frontend MERN Developer" />
+    <!-- My CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Librabry -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./images/orange-white.png" type="image/x-png">
+    <!-- font-awesome-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- Email-Js Form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_SgLqZhwPVvrZfg9he6Rbk");
+        })();
+    </script>
+    <title>Neelesh Portfolio</title>
+</head>
+
+<body>
+
+    <!-- ================== HEADER ==================-->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="myLogo">Youness</a>
+
+            <div class="navMenuDiv hideAndSeek">
+                <ul class="navMenuList">
+                    <li class="navitems">
+                        <a class="navLink active-link" href="#home">
+                            <i class="fas fa-home"></i>Home
+                        </a>
+                    </li>
+
+                    <li class="navitems">
+                        <a class="navLink" href="#about">
+                            <i class="fas fa-user"></i>About
+                        </a>
+                    </li>
+
+                    <li class="navitems">
+                        <a class="navLink" href="#skills">
+                            <i class="fas fa-file-alt"></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="navitems">
+                        <a class="navLink" href="#projects">
+                            <i class="fas fa-file-image"></i>Projects
+                        </a>
+                    </li>
+
+                    <li class="navitems">
+                        <a class="navLink" href="#contact">
+                            <i class="fas fa-envelope"></i>Contact Me
+                        </a>
+                    </li>
+
+                    <li class="navitems" id="lightMode">
+                        <a class="navLink" title="Toggle dark mode">
+                            <i class="fas fa-sun"></i> <span>Light Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="navitems" id="darkMode">
+                        <a class="navLink" title="Toggle light mode">
+                            <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <i class="fas fa-times navClose" id="nav-close"></i>
+            </div>
+
+            <div class="navBtns">
+                <div class="navToggle" id="nav-toggle">
+                    <i class="material-icons-round">grid_view</i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================== MAIN SECTION ==================-->
+    <main>
+
+        <!-- ================= HOME SECTION ==================-->
+        <section id="home" class="homeSection">
+            <div class="socialMediaAndBlob">
+                <div class="socialMedia">
+                    <a data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="1600" class="socialMediaLinks"
+                        href="https://www.linkedin.com/in/youness-tantaoui/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="1800" class="socialMediaLinks"
+                        href="https://github.com/yuness001" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="2000" class="socialMediaLinks"
+                        href="https://twitter.com/____youness____" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <!-- <a data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="2200" class="socialMediaLinks"
+                        href="https://singhsduos.me/" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-rss"></i>
+                    </a> -->
+                </div>
+
+                <div class="svgAndDetails">
+                    <div class="myDetails">
+                        <h1 data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="1600" class="title">Hi,
+                            I am Youness</h1>
+                        <h3 data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="1800" class="subtitle">
+                            Software Engineer</h3>
+                        <h4 data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="2000" class="myDesc">High
+                            level experience in web design and development knowledge, Producing
+                            quality
+                            work.
+                        </h4>
+                        <a data-aos="fade-up" data data-aos-easing="ease-in-sine" data-aos-delay="2200"
+                            class="contactMeBtn" href="mailto:yunessaga@gmail.com">Contact Me <i id="msgIcon"
+                                class="far fa-envelope"></i></a>
+                    </div>
+
+                    <div class="blobGenerator">
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path id="blob"
+                                    d="M401,316Q326,382,227.5,420.5Q129,459,96,354.5Q63,250,109.5,168.5Q156,87,246,93.5Q336,100,406,175Q476,250,401,316Z" />
+
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path id="blob"
+                                    d="M401,316Q326,382,227.5,420.5Q129,459,96,354.5Q63,250,109.5,168.5Q156,87,246,93.5Q336,100,406,175Q476,250,401,316Z" />
+                                <!-- <image class="blobImg" xlink:href="./images/orange-white.png" /> -->
+                                <image class="blobImg" xlink:href="./images/orange-whitee.png" />
+
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrollDownBtn">
+                <i id="mouseIcon" class="fas fa-mouse"></i>
+                <h5 class="scrollDown">Scroll down</h5>
+                <i id="angleDownIcon" class="fas fa-angle-down"></i>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT SECTION ==================-->
+        <section id="about" class="aboutSection">
+
+            <div data-aos="zoom-in" data-aos-delay="200" class="mainHeadingDiv">
+                <h1 class="aboutMeHeading">About Me</h1>
+                <h5 class="introHeading">My Introduction</h5>
+            </div>
+
+            <div class="imgAndDescDiv">
+                <div class="myImgDiv">
+                    <img class="myImg" src="./images/BF.png" alt="myImage">
+                </div>
+
+                <div class="descriptionAndCvDiv">
+                    <h2 class="aboutMeDesc" data-aos="zoom-in-up" data-aos-delay="200">Hi, I'm Youness Tantaoui, I am
+                        passionate
+                        about creating new code solutions for the problems and improving my skills. I have knowledge
+                        about frontend and backend and I'm interested in MERN
+                        Stack in which I'd like to pursue my career in.</h2>
+                    <!-- <div class="expAndProjects" data-aos="fade-up" data-aos-delay="400">
+                        <div class="yearsDiv">
+                            <h3 class="yearExp">01+</h3>
+                            <h4 class="yearAndPrjctDes">Years Experience</h4>
+                        </div>
+
+                        <div class="projectsDiv">
+                            <h3 class="projectNo">15+</h3>
+                            <h4 class="yearAndPrjctDes">Completed Projects</h4>
+                        </div>
+                    </div> -->
+
+                    <a data-aos="fade-up" data-aos-delay="600" class="downloadCvBtn" download=""
+                        href="./pdf/resume.pdf">Download Resume <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILL SECTION ==================-->
+        <section id="skills" class="skillSection">
+
+            <div data-aos="zoom-in" data-aos-delay="200" class="skillHeadingDiv">
+                <h1 class="skillHeading">Skills</h1>
+                <h5 class="introHeading">My technical level</h5>
+            </div>
+
+            <div class="allSkillsList">
+
+                <div class="skillData" data-aos="fade-down">
+                    <div class="skillsTitleAndICon">
+                        <i class="fab fa-html5 skillsIcon"></i>
+                        <h3 class="skillName">HTML</h3>
+                    </div>
+                    <div class="skillBar">
+                        <!-- <div class="skillPercentageHTML"></div> -->
+                    </div>
+                </div>
+
+                <div class="skillData" data-aos="fade-down">
+                    <div class="skillsTitleAndICon">
+                        <i class="fab fa-css3-alt skillsIcon"></i>
+                        <h3 class="skillName">CSS</h3>
+                    </div>
+                    <div class="skillBar">
+                        <!-- <div class="skillPercentageCSS"></div> -->
+                    </div>
+                </div>
+
+                <div class="skillData" data-aos="fade-down">
+                    <div class="skillsTitleAndICon">
+                        <i class="fab fa-js skillsIcon"></i>
+                        <h3 class="skillName">JavaScript</h3>
+                    </div>
+                    <div class="skillBar">
+                        <!-- <div class="skillPercentageJS"></div> -->
+                    </div>
+                </div>
+
+                <div class="skillData" data-aos="fade-down">
+                    <div class="skillsTitleAndICon">
+                        <i class="fab fa-react skillsIcon"></i>
+                        <h3 class="skillName">React.js</h3>
+                    </div>
+                    <div class="skillBar">
+                        <!-- <div class="skillPercentageCPP"></div> -->
+                    </div>
+                </div>
+
+                <div class="skillData" data-aos="fade-down">
+                    <div class="skillsTitleAndICon">
+                        <!-- <img class="skillsIcon" id="flutterIcon" src="./images/FlutterW.png" alt="flutter" /> -->
+                        <i class="fab fa-node-js skillsIcon"></i>
+                        <h3 class="skillName">Node.js</h3>
+                    </div>
+                    <div class="skillBar">
+                        <!-- <div class="skillPercentageFlutter"></div> -->
+                    </div>
+                </div>
+
+                <div class="skillData" data-aos="fade-down">
+                    <div class="skillsTitleAndICon">
+                        <i class="fab fa-github skillsIcon"></i>
+                        <h3 class="skillName">Git & GitHub</h3>
+                    </div>
+                    <div class="skillBar">
+                        <!-- <div class="skillPercentageGit"></div> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= PROJECT SECTION ==================-->
+        <section id="projects" class="projectSection">
+            <div data-aos="zoom-in" data-aos-delay="200" class="projectConti">
+                <div class="projectHeadingDiv">
+                    <h1 class="projectsHeading">Projects</h1>
+                    <h5 class="introHeading">My most recent work</h5>
+                </div>
+
+                <div id="allProject" class="allProjects">
+                </div>
+
+                <!-- <div class="showBtnDiv" data-aos="fade-up" data-aos-delay="150">
+                    <button id="showAll" class="showAllBtn">Show all
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+
+                </div> -->
+
+            </div>
+        </section>
+
+        <!-- ================= CONTACT SECTION ==================-->
+        <section id="contact" class="contactSection">
+
+            <div class="contactDiv">
+
+                <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine" class="mailSection">
+
+                    <div class="contactHeadingDiv">
+                        <h1 class="contactHeading">Contact</h1>
+                        <h5 class="introHeading">Get In Touch <i class="material-icons-round">headset_mic</i></h5>
+                    </div>
+
+                    <form action="" class="contactForm">
+                        <div class="contactContent">
+                            <label for="" class="contactLabel">Your Name</label>
+                            <input required id="clientName" type="text" class="contactInput">
+                        </div>
+                        <div class="contactContent">
+                            <label for="" class="contactLabel">Your Email</label>
+                            <input required id="clientMail" type="email" class="contactInput">
+                        </div>
+                        <div class="contactContent">
+                            <label for="" class="contactLabel">Your Message</label>
+                            <textarea required id="clientMsg" placeholder="Type something if you want..."
+                                class="contactInput" name="" rows="5"></textarea>
+                        </div>
+
+                        <div class="msgBtnDiv">
+                            <a type="submit" onclick='sendMail()' class="msgButton">
+                                Send Message
+                                <i class="fas fa-angle-double-right msgIcon"></i>
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+
+
+                <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine" class="logoSection">
+
+                    <img src="./images/mail.png" alt="mail" class="mailImg">
+
+                    <div class="contactInformationDiv">
+
+                        <div class="conatctInfo">
+                            <i class="fas fa-phone-alt phoneIcon"></i>
+                            <div class="infoDiv">
+                                <h3 class="infoTitle">Call Me</h3>
+                                <h5 class="infoSubtite">+212-631449044</h5>
+                            </div>
+                        </div>
+
+
+                        <div class="conatctInfo">
+                            <i class="fas fa-envelope mailIcon"></i>
+                            <div class="infoDiv">
+                                <h3 class="infoTitle">Email</h3>
+                                <h5 class="infoSubtite">yunessaga@gmail.com</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contactDesgin oneDiv"></div>
+                <div class="contactDesgin twoDiv"></div>
+                <div class="contactDesgin threeDiv"></div>
+                <div class="contactDesgin fourthDiv"></div>
+                <div class="contactDesgin fifthDiv"></div>
+                <div class="contactDesgin sixthDiv"></div>
+                <div class="contactDesgin seventhDiv"></div>
+                <div class="contactDesgin eigthDiv"></div>
+                <div class="contactDesgin ninthDiv"></div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOTTER SECTION ==================-->
+    <footer class="footer">
+        <div class="fotterBg">
+            <div class="fotterConti">
+                <div class="fotterDetails">
+                    <h1 class="fotterTitle">Youness</h1>
+                    <h4 class="fotterSubttitle">Thank you for visiting my personal portfolio website. Connect with me
+                        over social media.
+                    </h4>
+                </div>
+
+                <div class="footerLinksDiv">
+
+                    <ul class="footerLinksList">
+                        <li>
+                            <a href="#home" class="fotterLink">Home</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="fotterLink">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="fotterLink">Projects</a>
+                        </li>
+                    </ul>
+
+                    <div class="footerSocialMediaDiv">
+                        <a class="footerSocialLinks" href="https://www.linkedin.com/in/youness-tantaoui/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a class="footerSocialLinks" href="https://github.com/yuness001" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a class="footerSocialLinks" href="https://twitter.com/____youness____" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fotterLine"></div>
+
+            <div class="copyright">
+                <h3>Designed & Developed by</h3>
+                <h4>Neelesh Singh</h4>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- My JS File -->
+    <script src="app.js"></script>
+    <!-- AOS Librabry JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

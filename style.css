@@ -1,0 +1,1547 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap");
+/*
+ ______________________________________________
+|                                              |
+|     DEFAULT BODY AND OTHER CSS TAG           |
+|______________________________________________|
+
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-theme: #9a9ae0;
+  --blueAngle-shade: #7c7caf;
+  --lightBlue-theme: #9a9ae0e0;
+  --blueFont: #9a9ae1;
+  --whiteFont: rgb(255, 255, 255);
+  --white-shade: #fff;
+  --html: #ff5024;
+  --css: #1a72ba;
+  --js: #ffdd24;
+  --cpp: #00ab45;
+  --flutter: #00c7fa;
+  --git: #272b34;
+  --body-color: white;
+  --btn-shadow: #ececec;
+  --btn-angleShadow: rgb(241, 241, 241);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--body-color);
+}
+
+.dark-theme {
+  --blue-theme: #9a9ae0;
+  --lightBlue-theme: #9a9ae0e0;
+  --blueFont: white;
+  --white-shade: #fff;
+  --body-color: #0e0e52;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 60px;
+  background-color: var(--blue-theme);
+}
+
+main {
+  width: 75%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white-shade);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-theme);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lightBlue-theme);
+}
+
+/*
+ ______________________________________________
+|                                              |
+|             CSS FOR NAVBAR                   |
+|______________________________________________|
+
+*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: 1.25rem auto;
+}
+
+.myLogo {
+  color: var(--white-shade);
+  font-weight: 700;
+}
+
+.navMenuDiv {
+  width: 70%;
+}
+
+.navMenuList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navitems a {
+  display: flex;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  color: var(--white-shade);
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.navLink:hover {
+  transform: translateY(-0.2rem);
+}
+
+#darkMode {
+  display: none;
+  cursor: pointer;
+}
+
+#darkMode a {
+  color: #0e0e52;
+  transition: 0.3s ease-in;
+}
+
+#lightMode {
+  cursor: pointer;
+  color: var(--white-shade);
+}
+
+#lightMode a {
+  transition: 0.3s ease-in;
+}
+
+.active-link {
+  color: #0e0e52;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #0e0e52;
+  transition: 0.3s ease-in;
+}
+
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR HOME SECTION                |
+|______________________________________________|
+
+*/
+
+.homeSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: -8rem;
+}
+
+.socialMediaAndBlob {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 2rem;
+}
+
+.socialMediaLinks {
+  margin: 1rem 0rem;
+}
+
+.socialMediaLinks i {
+  color: var(--blueFont);
+}
+
+.svgAndDetails {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50rem;
+}
+
+.myDetails {
+  width: 80%;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--blueFont);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--blueFont);
+}
+
+.myDesc {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  width: 21.875rem;
+  color: var(--blueFont);
+}
+
+.contactMeBtn {
+  color: var(--white-shade);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.25rem 1.875rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  background-color: var(--blue-theme);
+  box-shadow: 0 5px var(--blueAngle-shade);
+}
+
+.contactMeBtn:hover,
+.contactMeBtn:active {
+  background-color: var(--lightBlue-theme);
+  top: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+.contactMeBtn i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
+}
+
+.contactMeBtn:hover i {
+  transform: translateX(5px);
+}
+
+.blobGenerator {
+  margin-left: -4rem;
+  opacity: 0;
+}
+
+@keyframes loading {
+  0% {
+    clip-path: inset(0px 90% 0% 0%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0px 0% 0% 0%);
+  }
+}
+
+#blobSvg {
+  width: 25rem;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#blob {
+  fill: var(--blue-theme);
+}
+
+.blobImg {
+  height: 18.75rem;
+  width: 25rem;
+  x: 60;
+  y: 110;
+  display: inline-block;
+  filter: opacity(0.5);
+}
+
+.scrollDownBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 11.5rem;
+  cursor: pointer;
+  width: 9.375rem;
+  transition: 0.3s;
+}
+
+.scrollDownBtn:hover {
+  transform: translateY(0.25rem);
+}
+
+#mouseIcon,
+.scrollDown,
+#angleDownIcon {
+  margin: 0.2rem;
+  color: var(--blueFont);
+}
+
+#mouseIcon {
+  font-size: 1.25rem;
+}
+
+.scrollDown {
+  font-size: 15px;
+}
+
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR ABOUT SECTION               |
+|______________________________________________|
+
+*/
+
+.aboutSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 1rem;
+}
+
+.mainHeadingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--blueFont);
+  margin-top: 1rem;
+}
+
+.aboutMeHeading {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  margin-top: 0rem;
+}
+
+.imgAndDescDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.myImgDiv {
+  margin: 1rem;
+  opacity: 0;
+}
+
+.myImg {
+  width: 18.75rem;
+  border-radius: 15px;
+  margin-top: 17%;
+}
+
+@keyframes scrolling {
+  0% {
+    clip-path: inset(0px 0% 100% 0%);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0px 0% 0% 0%);
+  }
+}
+
+.aboutMeDesc {
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 22.813rem;
+  margin: 10% 0;
+}
+
+.descriptionAndCvDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2.5rem 0rem;
+  color: var(--blueFont);
+}
+
+.expAndProjects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 22.813rem;
+  margin: 2.5rem 0rem;
+}
+
+.yearsDiv,
+.projectsDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.yearExp,
+.projectNo {
+  font-size: 2rem;
+}
+
+.yearAndPrjctDes {
+  font-weight: 400;
+}
+
+.downloadCvBtn {
+  color: var(--white-shade);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.25rem 1.875rem;
+  width: 13.75rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--blue-theme);
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 5px var(--blueAngle-shade);
+}
+
+.downloadCvBtn:hover,
+.downloadCvBtn:active {
+  outline: none;
+  cursor: pointer;
+  background: var(--lightBlue-theme);
+}
+
+.downloadCvBtn i {
+  font-size: 1.2rem;
+  margin-left: 2px;
+  transition: 0.3s;
+}
+
+.downloadCvBtn:hover i {
+  transform: translateX(5px);
+}
+
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR SKILL SECTION               |
+|______________________________________________|
+
+*/
+
+.skillSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 1rem;
+}
+
+.skillHeadingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--blueFont);
+  margin-top: 1rem;
+}
+
+.skillHeading {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  margin-top: -5rem;
+}
+
+.allSkillsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 3.75rem;
+  margin-top: 5rem;
+}
+
+.skillData {
+  width: 19.688rem;
+  background-color: var(--blue-theme);
+  border-radius: 10px;
+}
+
+.skillsTitleAndICon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: var(--white-shade);
+}
+
+.skillsIcon {
+  font-size: 1.2rem;
+}
+
+.skillName {
+  font-size: 2rem;
+}
+
+.skillBar {
+  width: 18.75rem;
+  background-color: var(--white-shade);
+  height: 10px;
+  border-radius: 10px;
+  margin: 6px auto;
+  margin-top: 4px;
+}
+
+.skillPercentageHTML {
+  width: 90%;
+  background-color: var(--html);
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageCSS {
+  width: 80%;
+  background-color: var(--css);
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageJS {
+  width: 65%;
+  background-color: var(--js);
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageCPP {
+  width: 70%;
+  background-color: var(--cpp);
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageFlutter {
+  width: 65%;
+  background-color: var(--flutter);
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageGit {
+  width: 75%;
+  background-color: var(--git);
+  height: 10px;
+  border-radius: 10px;
+}
+
+#flutterIcon {
+  width: 25px;
+  height: 20px;
+  margin-left: -0.2rem;
+}
+
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR PROJECT SECTION             |
+|______________________________________________|
+
+*/
+
+.projectSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+  margin-top: 1rem;
+}
+
+.projectHeadingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--blueFont);
+  margin-top: 1rem;
+}
+
+.projectsHeading {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  margin-top: -5rem;
+}
+
+.allProjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 3.125rem 1.25rem;
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+  max-height: 100%;
+  margin: 1.5rem 0rem;
+}
+
+.card {
+  justify-self: center;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 25rem;
+  max-width: 90%;
+  transition: 0.3s;
+  border-radius: 15px;
+  background-color: var(--whiteFont);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.projectLinks {
+  margin: 0rem 0.1rem;
+  background-color: var(--blue-theme);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectLinks i {
+  color: var(--white-shade);
+}
+
+.titleAndIconDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  color: var(--blue-theme);
+}
+
+.projectImg {
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.projectIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectConti {
+  position: relative;
+  width: 100%;
+}
+
+.showBtnDiv {
+  width: 100%;
+  height: 18.75rem;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 6;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), 20%, var(--body-color));
+  transition: all 0.3s ease 0s;
+}
+
+.showAllBtn {
+  position: absolute;
+  left: 50%;
+  z-index: 6;
+  top: 0;
+  padding: 0.938rem 2.5rem;
+  font-weight: bold;
+  transform: translateX(-50%);
+  color: var(--white-shade);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.25rem 1.875rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--blue-theme);
+}
+
+.showAllBtn:hover,
+.showAllBtn:active {
+  outline: none;
+  cursor: pointer;
+  background: var(--lightBlue-theme);
+}
+
+.showAllBtn i {
+  transition: 0.3s;
+  margin-left: 0.2rem;
+  font-size: 1rem;
+  color: var(--white-shade);
+}
+
+.showAllBtn:hover i {
+  transform: translateY(3px);
+}
+
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR CONTACT SECTION             |
+|______________________________________________|
+
+*/
+
+.contactSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 105vh;
+}
+
+.contactDiv {
+  background-color: var(--blue-theme);
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+}
+
+.mailSection {
+  width: 100%;
+  margin: 0rem 4rem;
+}
+
+.contactHeadingDiv {
+  color: var(--white-shade);
+}
+
+.contactHeading {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.contactHeadingDiv .introHeading {
+  font-size: 0.9rem;
+  margin: 1rem 0rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.contactHeadingDiv .introHeading i {
+  margin: 0rem 0.3rem;
+}
+
+.contactForm {
+  color: var(--white-shade);
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0.7rem 0rem;
+}
+
+.contactLabel {
+  margin: 0.5rem 0rem;
+}
+
+.contactInput {
+  width: 100%;
+  background-color: #e3e8ff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: rgba(1, 1, 8, 0.863);
+  padding: 0.7rem 0.5rem;
+  border-radius: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.msgBtnDiv {
+  margin-top: 2.5rem;
+}
+
+.msgButton {
+  color: var(--blue-theme);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4% 8%;
+  width: 13.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--white-shade);
+  box-shadow: 0 5px #d3d6d8;
+}
+
+.msgButton:hover {
+  box-shadow: 0 3px #d3d6d8;
+  top: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+.msgButton:active {
+  box-shadow: 0 0 #d3d6d8;
+  top: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.msgButton i {
+  transition: 0.3s;
+  margin-left: 0.2rem;
+}
+
+.msgButton:hover i {
+  transform: translateX(6px);
+}
+
+.logoSection {
+  width: 100%;
+  margin: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mailImg {
+  margin-top: -1.5rem;
+  margin-left: -3rem;
+  width: 90%;
+}
+
+.conatctInfo {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0rem;
+}
+
+.phoneIcon,
+.mailIcon {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: var(--white-shade);
+}
+
+.infoTitle {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--white-shade);
+}
+
+.infoSubtite {
+  font-weight: 400;
+  color: var(--white-shade);
+}
+
+.contactDesgin {
+  position: absolute;
+  height: 1.875rem;
+  background-color: red;
+  border-radius: 15px;
+  width: 9.375rem;
+}
+
+.oneDiv {
+  top: 45px;
+  left: -100px;
+  background-color: var(--body-color);
+}
+
+.twoDiv {
+  top: 45px;
+  right: -75px;
+  background-color: var(--body-color);
+}
+
+.threeDiv {
+  top: 15px;
+  right: -40px;
+  background-color: var(--blue-theme);
+}
+
+.fourthDiv {
+  top: 450px;
+  right: -115px;
+  background-color: var(--body-color);
+}
+
+.fifthDiv {
+  top: 480px;
+  right: -30px;
+  background-color: var(--blue-theme);
+  height: 50px;
+  border-radius: 25px;
+}
+
+.sixthDiv {
+  top: 195px;
+  left: -25px;
+  width: 75px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: var(--blue-theme);
+}
+
+.seventhDiv {
+  top: 235px;
+  left: -100px;
+  background-color: var(--body-color);
+}
+
+.eigthDiv {
+  top: 265px;
+  left: -45px;
+  width: 75px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: var(--blue-theme);
+}
+
+.ninthDiv {
+  top: 75px;
+  right: -30px;
+  background-color: var(--blue-theme);
+  height: 50px;
+  border-radius: 25px;
+}
+
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR FOTTER SECTION              |
+|______________________________________________|
+
+*/
+
+.footer {
+  width: 100%;
+  height: 18.75rem;
+  background-color: var(--blue-theme);
+}
+
+.fotterBg {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotterConti {
+  display: flex;
+  justify-content: space-between;
+  height: 12.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.fotterDetails {
+  width: 18.75rem;
+}
+
+.fotterTitle {
+  color: var(--white-shade);
+}
+
+.fotterSubttitle {
+  color: var(--white-shade);
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.footerLinksDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLinksList {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footerSocialMediaDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 25rem;
+  margin-top: 2rem;
+}
+
+.footerSocialLinks {
+  margin: 0rem 0.8rem;
+  background-color: var(--white-shade);
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+
+.footerSocialLinks i {
+  color: #9a9ae0;
+  padding: 10px;
+}
+
+.fotterLink {
+  font-weight: 700;
+  color: var(--white-shade);
+}
+
+.fotterLink:hover {
+  font-weight: 700;
+  color: #0e0e52;
+}
+
+.copyright {
+  margin: 1rem 0rem;
+  color: var(--white-shade);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.copyright h3 {
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.copyright h4 {
+  margin: 0rem 0.3rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.fotterLine {
+  height: 2px;
+  width: 75%;
+  background-color: #bbbbbb;
+  margin: 0rem auto;
+}
+
+/*
+ ______________________________________________
+|                                              |
+|            MEDIA QUERIES CSS                 |
+|______________________________________________|
+*/
+
+@media screen and (min-width: 741px) {
+  /*
+ ______________________________________________
+|                                              |
+|     DEFAULT BODY AND OTHER CSS TAG           |
+|______________________________________________|
+
+*/
+
+  header {
+    top: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+  }
+
+  /*
+ ______________________________________________
+|                                              |
+|             CSS FOR NAVBAR                   |
+|______________________________________________|
+
+*/
+
+  #nav-close,
+  .navBtns {
+    display: none;
+  }
+
+  .navLink {
+    justify-content: space-around;
+  }
+
+  .navLink i {
+    display: none;
+  }
+
+  .navLink span {
+    display: none;
+  }
+
+  #lightMode i {
+    display: block;
+  }
+
+  #darkMode i {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+  /*
+ ______________________________________________
+|                                              |
+|     DEFAULT BODY AND OTHER CSS TAG           |
+|______________________________________________|
+
+*/
+  header {
+    bottom: 0;
+    box-shadow: 0 -1px 4px rgb(0, 0, 0, 0.15);
+    transition: 0.3s;
+    border-radius: 1.5rem 1.5rem 0 0;
+    height: auto;
+  }
+
+  /*
+ ______________________________________________
+|                                              |
+|             CSS FOR NAVBAR                   |
+|______________________________________________|
+
+*/
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 1.25rem auto;
+  }
+
+  .navMenuDiv {
+    width: 90%;
+  }
+
+  .navToggle {
+    color: var(--white-shade);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  .hideAndSeek {
+    display: none;
+  }
+
+  .navMenuList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #nav-close {
+    color: var(--white-shade);
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .navLink {
+    flex-direction: column;
+  }
+
+  .navLink i {
+    margin: 0.5rem 0rem;
+    font-size: 1.2rem;
+  }
+
+  .active-link {
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+
+  /*
+ ______________________________________________
+|                                              |
+|          CSS FOR HOME SECTION                |
+|______________________________________________|
+
+*/
+
+  main {
+    width: 95%;
+    margin: 0rem auto;
+  }
+
+  .homeSection {
+    height: auto;
+    margin: auto;
+    margin-top: -3rem;
+  }
+
+  .socialMediaAndBlob {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  .socialMediaLinks {
+    margin: 1rem 0rem;
+    margin-right: 3rem;
+  }
+
+  .svgAndDetails {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .myDetails {
+    width: 90%;
+  }
+
+  .title,
+  .subtitle,
+  .myDesc {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .myDesc {
+    font-size: 1.1rem;
+  }
+
+  #blobSvg {
+    width: 115%;
+  }
+
+  .blobImg {
+    height: 18.75rem;
+    width: 23rem;
+    x: 41;
+  }
+
+  .scrollDownBtn {
+    display: none;
+    margin-top: 3rem;
+    margin-left: 0.7rem;
+  }
+
+  /*
+ ______________________________________________
+|                                              |
+|          CSS FOR ABOUT SECTION               |
+|______________________________________________|
+
+
+*/
+
+  .aboutSection {
+    height: 100vh;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .aboutMeHeading {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .imgAndDescDiv {
+    flex-direction: column;
+  }
+
+  .myImg {
+    width: 200px;
+  }
+
+  .aboutMeDesc {
+    width: 80%;
+  }
+
+  .descriptionAndCvDiv {
+    align-items: center;
+    margin: 1.5rem 0rem;
+  }
+
+  .yearExp,
+  .projectNo {
+    font-size: 1.5rem;
+  }
+
+  .expAndProjects {
+    width: 80%;
+    margin: 2.5rem 0rem;
+  }
+
+  /*
+ ______________________________________________
+|                                              |
+|          CSS FOR SKILL SECTION               |
+|______________________________________________|
+
+*/
+
+  .skillSection {
+    height: auto;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .skillHeading {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .allSkillsList {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.75rem;
+    margin-top: 3rem;
+  }
+
+  .skillData {
+    width: 20rem;
+  }
+
+  .skillBar {
+    width: 19rem;
+  }
+
+  /*
+ ______________________________________________
+|                                              |
+|          CSS FOR PROJECT SECTION             |
+|______________________________________________|
+
+*/
+
+  .projectSection {
+    height: auto;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .projectsHeading {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .allProjects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .card {
+    height: auto;
+    min-width: 90%;
+  }
+
+  .titleAndIconDiv {
+    margin-top: 2rem;
+  }
+
+  .showBtnDiv {
+    height: 13%;
+    left: 0;
+    right: 0;
+  }
+
+  /*
+ ______________________________________________
+|                                              |
+|          CSS FOR CONTACT SECTION             |
+|______________________________________________|
+
+*/
+
+  .contactSection {
+    height: auto;
+    margin: 3rem auto;
+  }
+
+  .contactDiv {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contactHeading {
+    margin-top: 2rem;
+  }
+
+  .mailSection,
+  .logoSection {
+    width: 75%;
+    margin: 1rem auto;
+  }
+
+  .logoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contactDesgin {
+    display: none;
+  }
+
+  /*
+ ______________________________________________
+|                                              |
+|          CSS FOR FOTTER SECTION              |
+|______________________________________________|
+
+*/
+
+  .footer {
+    height: auto;
+    padding-top: 2rem;
+  }
+
+  .fotterBg {
+    width: 90%;
+  }
+
+  .fotterConti {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .fotterSubttitle {
+    width: 80%;
+  }
+
+  .footerLinksDiv {
+    width: 90%;
+  }
+
+  .footerLinksList {
+    flex-direction: column;
+    margin: 2rem 0rem;
+    width: 90%;
+  }
+
+  .footerLinksList li {
+    margin: 1rem 0rem;
+  }
+
+  .footerSocialMediaDiv {
+    width: 10rem;
+    margin-top: 0rem;
+  }
+
+  .fotterLink {
+    margin: 8rem 0rem;
+    height: 13rem;
+    font-size: 1.2rem;
+  }
+
+  .footerSocialLinks {
+    width: 3.5rem;
+  }
+
+  .fotterLine {
+    width: 90%;
+    margin: 1rem 0rem;
+    margin-top: 16rem;
+  }
+
+  .copyright {
+    margin-bottom: 8rem;
+    width: 90%;
+  }
+}
