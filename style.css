@@ -999,7 +999,7 @@ textarea {
 
 .footer {
   width: 100%;
-  height: 18.75rem;
+  height: 12rem;
   background-color: var(--blue-theme);
 }
 
@@ -1010,6 +1010,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: -webkit-fill-available;
 }
 
 .fotterConti {
